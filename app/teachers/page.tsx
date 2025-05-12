@@ -1,80 +1,89 @@
-"use client"
+"use client";
 
-import { useState, useEffect } from "react"
-import { Button } from "@/components/ui/button"
+import { useState, useEffect } from "react";
+import { Button } from "@/components/ui/button";
 import {
   Select,
   SelectContent,
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from "@/components/ui/select"
-import { Slider } from "@/components/ui/slider"
-import { Input } from "@/components/ui/input"
-import { Label } from "@/components/ui/label"
-import { Search } from "lucide-react"
-import TeacherCard from "@/components/ui/TeacherCard"
+} from "@/components/ui/select";
+import { Slider } from "@/components/ui/slider";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
+import { Search } from "lucide-react";
+import TeacherCard from "@/components/ui/TeacherCard";
 
 // Import teachers data
-import teachersData from "@/data/teachers.json"
+import teachersData from "@/data/teachers.json";
 
 export default function TeachersPage() {
-  const [teachers, setTeachers] = useState(teachersData)
-  const [filteredTeachers, setFilteredTeachers] = useState(teachersData)
-  const [searchQuery, setSearchQuery] = useState("")
-  const [subject, setSubject] = useState("all")
-  const [location, setLocation] = useState("all")
-  const [priceRange, setPriceRange] = useState([0, 100])
-  
+  const [teachers, setTeachers] = useState(teachersData);
+  const [filteredTeachers, setFilteredTeachers] = useState(teachersData);
+  const [searchQuery, setSearchQuery] = useState("");
+  const [subject, setSubject] = useState("all");
+  const [location, setLocation] = useState("all");
+  const [priceRange, setPriceRange] = useState([0, 100]);
+
   // Extract unique subjects and locations
-  const subjects = ["all", ...new Set(teachers.map(teacher => teacher.subject))]
-  const locations = ["all", ...new Set(teachers.map(teacher => teacher.city))]
-  
+  const subjects = [
+    "all",
+    ...Array.from(new Set(teachers.map((teacher) => teacher.subject))),
+  ];
+  const locations = [
+    "all",
+    ...Array.from(new Set(teachers.map((teacher) => teacher.city))),
+  ];
+
   // Filter teachers based on selected criteria
   useEffect(() => {
-    let filtered = [...teachers]
-    
+    let filtered = [...teachers];
+
     // Filter by search query
     if (searchQuery) {
-      filtered = filtered.filter(teacher => 
-        teacher.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
-        teacher.subject.toLowerCase().includes(searchQuery.toLowerCase()) ||
-        teacher.city.toLowerCase().includes(searchQuery.toLowerCase())
-      )
+      filtered = filtered.filter(
+        (teacher) =>
+          teacher.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
+          teacher.subject.toLowerCase().includes(searchQuery.toLowerCase()) ||
+          teacher.city.toLowerCase().includes(searchQuery.toLowerCase())
+      );
     }
-    
+
     // Filter by subject
     if (subject && subject !== "all") {
-      filtered = filtered.filter(teacher => teacher.subject === subject)
+      filtered = filtered.filter((teacher) => teacher.subject === subject);
     }
-    
+
     // Filter by location
     if (location && location !== "all") {
-      filtered = filtered.filter(teacher => teacher.city === location)
+      filtered = filtered.filter((teacher) => teacher.city === location);
     }
-    
+
     // Filter by price range
-    filtered = filtered.filter(teacher => 
-      teacher.price >= priceRange[0] && teacher.price <= priceRange[1]
-    )
-    
-    setFilteredTeachers(filtered)
-  }, [teachers, searchQuery, subject, location, priceRange])
-  
+    filtered = filtered.filter(
+      (teacher) =>
+        teacher.price >= priceRange[0] && teacher.price <= priceRange[1]
+    );
+
+    setFilteredTeachers(filtered);
+  }, [teachers, searchQuery, subject, location, priceRange]);
+
   // Handle price range change
   const handlePriceRangeChange = (value: number[]) => {
-    setPriceRange(value)
-  }
-  
+    setPriceRange(value);
+  };
+
   return (
     <div className="container mx-auto px-4 py-12">
       <div className="text-center mb-12">
         <h1 className="text-4xl font-bold mb-4">Find Your Perfect Teacher</h1>
         <p className="text-muted-foreground max-w-2xl mx-auto">
-          Browse our qualified teachers and find the perfect match for your learning needs.
+          Browse our qualified teachers and find the perfect match for your
+          learning needs.
         </p>
       </div>
-      
+
       {/* Search and Filters */}
       <div className="bg-card shadow-sm rounded-lg p-6 mb-10">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
@@ -90,14 +99,11 @@ export default function TeachersPage() {
               />
             </div>
           </div>
-          
+
           {/* Subject Filter */}
           <div>
             <Label htmlFor="subject-filter">Subject</Label>
-            <Select
-              value={subject}
-              onValueChange={setSubject}
-            >
+            <Select value={subject} onValueChange={setSubject}>
               <SelectTrigger id="subject-filter" className="w-full">
                 <SelectValue placeholder="All Subjects" />
               </SelectTrigger>
@@ -110,14 +116,11 @@ export default function TeachersPage() {
               </SelectContent>
             </Select>
           </div>
-          
+
           {/* Location Filter */}
           <div>
             <Label htmlFor="location-filter">Location</Label>
-            <Select
-              value={location}
-              onValueChange={setLocation}
-            >
+            <Select value={location} onValueChange={setLocation}>
               <SelectTrigger id="location-filter" className="w-full">
                 <SelectValue placeholder="All Locations" />
               </SelectTrigger>
@@ -130,7 +133,7 @@ export default function TeachersPage() {
               </SelectContent>
             </Select>
           </div>
-          
+
           {/* Price Range Filter */}
           <div className="md:col-span-2">
             <div className="mb-2 flex justify-between">
@@ -150,7 +153,7 @@ export default function TeachersPage() {
           </div>
         </div>
       </div>
-      
+
       {/* Teachers Grid */}
       <div>
         <div className="flex justify-between items-center mb-6">
@@ -169,7 +172,7 @@ export default function TeachersPage() {
             </SelectContent>
           </Select>
         </div>
-        
+
         {filteredTeachers.length > 0 ? (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
             {filteredTeachers.map((teacher) => (
@@ -196,10 +199,10 @@ export default function TeachersPage() {
             </p>
             <Button
               onClick={() => {
-                setSearchQuery("")
-                setSubject("all")
-                setLocation("all")
-                setPriceRange([0, 100])
+                setSearchQuery("");
+                setSubject("all");
+                setLocation("all");
+                setPriceRange([0, 100]);
               }}
             >
               Reset Filters
@@ -208,5 +211,5 @@ export default function TeachersPage() {
         )}
       </div>
     </div>
-  )
+  );
 }
