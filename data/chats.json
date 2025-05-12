@@ -1,0 +1,108 @@
+[
+  {
+    "id": "1",
+    "participants": {
+      "student": {
+        "id": "s1",
+        "name": "Emma Thompson",
+        "image": "https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg?auto=compress&cs=tinysrgb&w=600"
+      },
+      "teacher": {
+        "id": "1",
+        "name": "Sarah Johnson",
+        "image": "https://images.pexels.com/photos/5212317/pexels-photo-5212317.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      }
+    },
+    "messages": [
+      {
+        "id": "m1",
+        "sender": "student",
+        "text": "Hello Sarah, I'm interested in math tutoring for my daughter who's in 10th grade. Do you have availability this week?",
+        "timestamp": "2025-03-10T14:22:30Z"
+      },
+      {
+        "id": "m2",
+        "sender": "teacher",
+        "text": "Hi Emma! I'd be happy to help your daughter with math. I have slots available on Wednesday and Friday afternoons. Would either of those work for you?",
+        "timestamp": "2025-03-10T14:25:45Z"
+      },
+      {
+        "id": "m3",
+        "sender": "student",
+        "text": "Friday would be perfect. She struggles with algebra particularly. Could you focus on that?",
+        "timestamp": "2025-03-10T14:30:12Z"
+      },
+      {
+        "id": "m4",
+        "sender": "teacher",
+        "text": "Absolutely! Algebra is one of my specialties. Let's start at 4pm on Friday. I'll prepare some materials specifically for algebra concepts. Looking forward to meeting you both!",
+        "timestamp": "2025-03-10T14:35:50Z"
+      },
+      {
+        "id": "m5",
+        "sender": "student",
+        "text": "That sounds great. Thank you so much!",
+        "timestamp": "2025-03-10T14:38:22Z"
+      }
+    ]
+  },
+  {
+    "id": "2",
+    "participants": {
+      "student": {
+        "id": "s2",
+        "name": "Alex Rodriguez",
+        "image": "https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&w=600"
+      },
+      "teacher": {
+        "id": "2",
+        "name": "Michael Chen",
+        "image": "https://images.pexels.com/photos/8197527/pexels-photo-8197527.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      }
+    },
+    "messages": [
+      {
+        "id": "m1",
+        "sender": "student",
+        "text": "Hi Michael, I saw your profile and I need help with my physics coursework, particularly mechanics and thermodynamics.",
+        "timestamp": "2025-03-11T09:15:30Z"
+      },
+      {
+        "id": "m2",
+        "sender": "teacher",
+        "text": "Hello Alex! I'd be glad to help you with physics. Those are areas I specialize in. Are you looking for regular sessions or help with specific problems?",
+        "timestamp": "2025-03-11T09:20:45Z"
+      },
+      {
+        "id": "m3",
+        "sender": "student",
+        "text": "I think I need regular sessions. I'm falling behind in class and have an exam coming up in three weeks.",
+        "timestamp": "2025-03-11T09:25:12Z"
+      },
+      {
+        "id": "m4",
+        "sender": "teacher",
+        "text": "I understand. Let's schedule twice weekly sessions to get you caught up before the exam. I can start this Thursday if that works for you. We'll focus on building a strong foundation in mechanics first.",
+        "timestamp": "2025-03-11T09:30:50Z"
+      },
+      {
+        "id": "m5",
+        "sender": "student",
+        "text": "Thursday works great. What time would be best?",
+        "timestamp": "2025-03-11T09:35:22Z"
+      },
+      {
+        "id": "m6",
+        "sender": "teacher",
+        "text": "How about 5pm? And we could do Tuesdays at the same time as well. I'll send you some preliminary materials to review before our first session.",
+        "timestamp": "2025-03-11T09:40:30Z"
+      },
+      {
+        "id": "m7",
+        "sender": "student",
+        "text": "Perfect! Thanks for your help. I'm looking forward to our first session.",
+        "timestamp": "2025-03-11T09:45:12Z"
+      }
+    ]
+  }
+]

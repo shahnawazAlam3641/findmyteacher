@@ -1,0 +1,80 @@
+[
+  {
+    "id": "p1",
+    "teacher": "1",
+    "amount": 500,
+    "status": "completed",
+    "type": "registration",
+    "date": "2025-01-15T10:30:00Z"
+  },
+  {
+    "id": "p2",
+    "teacher": "1",
+    "amount": 225,
+    "status": "completed",
+    "type": "platform_fee",
+    "date": "2025-02-01T14:22:00Z",
+    "description": "February platform fee (5% of earnings)"
+  },
+  {
+    "id": "p3",
+    "teacher": "1",
+    "amount": 270,
+    "status": "completed",
+    "type": "platform_fee",
+    "date": "2025-03-01T09:15:00Z",
+    "description": "March platform fee (5% of earnings)"
+  },
+  {
+    "id": "p4",
+    "teacher": "2",
+    "amount": 500,
+    "status": "completed",
+    "type": "registration",
+    "date": "2025-01-10T11:45:00Z"
+  },
+  {
+    "id": "p5",
+    "teacher": "2",
+    "amount": 250,
+    "status": "completed",
+    "type": "platform_fee",
+    "date": "2025-02-01T14:30:00Z",
+    "description": "February platform fee (5% of earnings)"
+  },
+  {
+    "id": "p6",
+    "teacher": "2",
+    "amount": 300,
+    "status": "completed",
+    "type": "platform_fee",
+    "date": "2025-03-01T09:22:00Z",
+    "description": "March platform fee (5% of earnings)"
+  },
+  {
+    "id": "p7",
+    "teacher": "3",
+    "amount": 500,
+    "status": "completed",
+    "type": "registration",
+    "date": "2025-01-20T15:10:00Z"
+  },
+  {
+    "id": "p8",
+    "teacher": "3",
+    "amount": 200,
+    "status": "completed",
+    "type": "platform_fee",
+    "date": "2025-02-01T14:35:00Z",
+    "description": "February platform fee (5% of earnings)"
+  },
+  {
+    "id": "p9",
+    "teacher": "3",
+    "amount": 240,
+    "status": "completed",
+    "type": "platform_fee",
+    "date": "2025-03-01T09:30:00Z",
+    "description": "March platform fee (5% of earnings)"
+  }
+]

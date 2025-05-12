@@ -1,0 +1,170 @@
+[
+  {
+    "id": "1",
+    "name": "Sarah Johnson",
+    "email": "sarah.johnson@example.com",
+    "subject": "Mathematics",
+    "city": "New York",
+    "price": 45,
+    "priceUnit": "hour",
+    "rating": 4.8,
+    "reviews": 24,
+    "bio": "I've been teaching mathematics for over 10 years, specializing in calculus and algebra. I have a Master's degree in Mathematics Education from Columbia University and I'm passionate about making complex math concepts accessible to all students.",
+    "experience": "10+ years",
+    "education": "M.S. Mathematics Education, Columbia University",
+    "profileImage": "https://images.pexels.com/photos/5212317/pexels-photo-5212317.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "availability": ["Mon", "Wed", "Fri"],
+    "teachingMode": ["In-person", "Online"],
+    "galleryImages": [
+      "https://images.pexels.com/photos/5212324/pexels-photo-5212324.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://images.pexels.com/photos/5212339/pexels-photo-5212339.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    ]
+  },
+  {
+    "id": "2",
+    "name": "Michael Chen",
+    "email": "michael.chen@example.com",
+    "subject": "Physics",
+    "city": "Boston",
+    "price": 50,
+    "priceUnit": "hour",
+    "rating": 4.9,
+    "reviews": 32,
+    "bio": "Physics instructor with expertise in mechanics, thermodynamics, and quantum physics. I have a PhD in Theoretical Physics from MIT and have published several papers in peer-reviewed journals. I believe in hands-on learning and practical experiments to demonstrate theoretical concepts.",
+    "experience": "8 years",
+    "education": "PhD Theoretical Physics, MIT",
+    "profileImage": "https://images.pexels.com/photos/8197527/pexels-photo-8197527.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "availability": ["Tue", "Thu", "Sat"],
+    "teachingMode": ["Online", "In-person"],
+    "galleryImages": [
+      "https://images.pexels.com/photos/8197517/pexels-photo-8197517.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://images.pexels.com/photos/8197529/pexels-photo-8197529.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    ]
+  },
+  {
+    "id": "3",
+    "name": "Emily Rodriguez",
+    "email": "emily.rodriguez@example.com",
+    "subject": "English Literature",
+    "city": "Chicago",
+    "price": 40,
+    "priceUnit": "hour",
+    "rating": 4.7,
+    "reviews": 19,
+    "bio": "I'm an English Literature teacher with a focus on classic and contemporary literature. I have an MFA in Creative Writing from Northwestern University and have authored two novels. I help students develop their analytical skills and find their unique voice through writing.",
+    "experience": "6 years",
+    "education": "MFA Creative Writing, Northwestern University",
+    "profileImage": "https://images.pexels.com/photos/5212340/pexels-photo-5212340.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "availability": ["Mon", "Tue", "Wed", "Thu", "Fri"],
+    "teachingMode": ["In-person", "Online"],
+    "galleryImages": [
+      "https://images.pexels.com/photos/5212630/pexels-photo-5212630.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://images.pexels.com/photos/5212361/pexels-photo-5212361.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    ]
+  },
+  {
+    "id": "4",
+    "name": "David Patel",
+    "email": "david.patel@example.com",
+    "subject": "Chemistry",
+    "city": "San Francisco",
+    "price": 55,
+    "priceUnit": "hour",
+    "rating": 4.6,
+    "reviews": 15,
+    "bio": "Chemistry teacher with a focus on organic chemistry and biochemistry. I have a PhD in Chemistry from UC Berkeley and have worked in pharmaceutical research before transitioning to teaching. I use real-world applications to make chemistry engaging and relevant.",
+    "experience": "7 years",
+    "education": "PhD Chemistry, UC Berkeley",
+    "profileImage": "https://images.pexels.com/photos/8197479/pexels-photo-8197479.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "availability": ["Wed", "Thu", "Fri", "Sat"],
+    "teachingMode": ["Online", "In-person"],
+    "galleryImages": [
+      "https://images.pexels.com/photos/8197543/pexels-photo-8197543.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://images.pexels.com/photos/8197519/pexels-photo-8197519.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    ]
+  },
+  {
+    "id": "5",
+    "name": "Aisha Khan",
+    "email": "aisha.khan@example.com",
+    "subject": "Computer Science",
+    "city": "Seattle",
+    "price": 60,
+    "priceUnit": "hour",
+    "rating": 4.9,
+    "reviews": 28,
+    "bio": "Computer Science instructor specializing in programming, algorithms, and web development. I've worked as a senior developer at major tech companies and hold a Master's in Computer Science from the University of Washington. I focus on project-based learning to build practical skills.",
+    "experience": "9 years",
+    "education": "M.S. Computer Science, University of Washington",
+    "profileImage": "https://images.pexels.com/photos/3783129/pexels-photo-3783129.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "availability": ["Mon", "Tue", "Wed", "Thu", "Sun"],
+    "teachingMode": ["Online", "In-person"],
+    "galleryImages": [
+      "https://images.pexels.com/photos/3861458/pexels-photo-3861458.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://images.pexels.com/photos/3861972/pexels-photo-3861972.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    ]
+  },
+  {
+    "id": "6",
+    "name": "James Wilson",
+    "email": "james.wilson@example.com",
+    "subject": "History",
+    "city": "Washington DC",
+    "price": 45,
+    "priceUnit": "hour",
+    "rating": 4.7,
+    "reviews": 22,
+    "bio": "History teacher with expertise in American and European history. I have a PhD in History from Georgetown University and have published several academic papers. I use primary sources and engaging storytelling to make historical events come alive for students.",
+    "experience": "12 years",
+    "education": "PhD History, Georgetown University",
+    "profileImage": "https://images.pexels.com/photos/5553050/pexels-photo-5553050.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "availability": ["Mon", "Wed", "Fri", "Sat"],
+    "teachingMode": ["In-person", "Online"],
+    "galleryImages": [
+      "https://images.pexels.com/photos/5553093/pexels-photo-5553093.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://images.pexels.com/photos/5553051/pexels-photo-5553051.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    ]
+  },
+  {
+    "id": "7",
+    "name": "Sophia Martinez",
+    "email": "sophia.martinez@example.com",
+    "subject": "Biology",
+    "city": "Los Angeles",
+    "price": 50,
+    "priceUnit": "hour",
+    "rating": 4.8,
+    "reviews": 18,
+    "bio": "Biology teacher specializing in molecular biology and genetics. I have a Master's in Biology from UCLA and worked in biotech research before becoming a teacher. I emphasize lab work and scientific inquiry to develop critical thinking skills.",
+    "experience": "5 years",
+    "education": "M.S. Biology, UCLA",
+    "profileImage": "https://images.pexels.com/photos/3768914/pexels-photo-3768914.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "availability": ["Tue", "Thu", "Sat", "Sun"],
+    "teachingMode": ["In-person", "Online"],
+    "galleryImages": [
+      "https://images.pexels.com/photos/3769021/pexels-photo-3769021.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://images.pexels.com/photos/3768895/pexels-photo-3768895.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    ]
+  },
+  {
+    "id": "8",
+    "name": "Robert Lee",
+    "email": "robert.lee@example.com",
+    "subject": "Music",
+    "city": "Austin",
+    "price": 55,
+    "priceUnit": "hour",
+    "rating": 4.9,
+    "reviews": 30,
+    "bio": "Professional musician and music teacher with expertise in piano and music theory. I graduated from Berklee College of Music and have performed with several orchestras. I tailor my teaching approach to each student's goals and learning style.",
+    "experience": "15 years",
+    "education": "B.A. Music Performance, Berklee College of Music",
+    "profileImage": "https://images.pexels.com/photos/4989158/pexels-photo-4989158.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "availability": ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
+    "teachingMode": ["In-person", "Online"],
+    "galleryImages": [
+      "https://images.pexels.com/photos/4989146/pexels-photo-4989146.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://images.pexels.com/photos/4989149/pexels-photo-4989149.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    ]
+  }
+]
